@@ -1,0 +1,35 @@
+.confirm-grid-wrapper {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;    
+}
+
+.confirm-grid-wrapper > span {
+    text-align: center;
+}
+
+.thank-you {
+    font-family: kismet;
+    font-size: 6rem;
+}
+
+.order-is-ready {
+    font-family: lobster;
+    font-size: 3rem;
+}
+
+.thank-you ,
+.order-is-ready {
+    color: #836437;
+}
+
+// iphone ++
+@media screen and (max-width : 767px) {
+    .thank-you {     
+        font-size: 4rem;
+    }
+
+    .order-is-ready {
+            font-size: 2rem;    
+    }
+}

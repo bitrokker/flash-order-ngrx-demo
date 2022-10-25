@@ -1,0 +1,90 @@
+// GRIDS
+
+.overview-grid-wrapper {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.overview-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+// SELEKTOREN
+
+.item-price {
+    justify-self: right;
+}
+
+.overview-wrapper,
+.total-pricing {
+    font-family: lobster;
+    font-size: 2rem;
+}
+
+.total-pricing {
+    border-top: dotted 6px #df6013;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    text-align: right;
+}
+
+.price {
+    width: 65px;
+    display: inline-block;
+    text-align: right;
+}
+
+main {
+    justify-self: center;
+}
+
+.headline {
+    color: #836437;
+    font-family: kismet;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+footer {
+    position: sticky;
+    bottom: 0px;
+}
+
+// RESPONSIVE
+
+// iphone
+@media screen and (max-width: 767px) {  
+    .headline {        
+        font-size: 2.5rem;
+    }  
+
+    .price {
+        width: 50px;
+    }
+    
+    .overview-wrapper,
+    .total-pricing {
+        font-size: 1.5rem;
+    }
+}
+
+// old iphone
+@media screen and (max-width : 360px) {
+    .headline {        
+        font-size: 2rem;
+    }
+
+    .price {
+        width: 38px;
+    }
+
+    .overview-wrapper,
+    .total-pricing {
+        font-size: 1.2rem;
+    }
+}

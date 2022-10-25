@@ -1,0 +1,34 @@
+<div class="overview-grid-wrapper">
+    <header-control></header-control>
+    <main class="content">
+        <span class="headline">Hello, here is your order</span>
+        <ng-container *ngIf="itemList.length > 0"> 
+            <ng-container  *ngFor="let item of itemList; index as i; let c = count">
+                <ng-container *ngIf="item.isSelected">
+                    <div class="overview-wrapper">
+                        <div class="item-name">
+                            <span>{{item.name}}</span>
+                        </div> 
+                        <div class="item-price wrapper">
+                            <span class="currency">$</span>
+                            <span class="price">{{item.price}}</span>
+                        </div> 
+                    </div>
+                </ng-container>
+            </ng-container >
+            <div class="total-pricing">
+                <span class="currency">$</span>
+                <span class="price">{{totalOrderPrice}}</span>
+            </div>
+        </ng-container>    
+
+    </main>   
+    <footer class="footer">
+        <button *ngIf="itemList.length > 0" 
+                class="order-button"
+                [routerLink]="['/confirmed']">Order</button>
+        <button *ngIf="!itemList || itemList.length === 0" 
+                class="order-button"
+                [routerLink]="['/order']">Back</button>
+    </footer>
+</div>

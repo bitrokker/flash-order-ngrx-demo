@@ -1,0 +1,59 @@
+﻿
+[
+	{
+		"id": 1,
+		"name": "Double Burger",
+		"price": 1.99,
+		"image": "assets/images/burger.png",
+		"isSelected": false
+	},
+	{
+		"id": 2,
+		"name": "Dog Hot Dog",
+		"price": 1.49,
+		"image": "assets/images/hotdog.png",
+		"isSelected": false
+	},
+	{
+		"id": 3,
+		"name": "Sqare Sandwitch",
+		"price": 1.79,
+		"image": "assets/images/sandwitch.png",
+		"isSelected": false
+	},
+	{
+		"id": 4,
+		"name": "King Kebab",
+		"price": 2.59,
+		"image": "assets/images/kebab.png",
+		"isSelected": false
+	},
+	{
+		"id": 5,
+		"name": "Eggless Breakfast",
+		"price": 2.99,
+		"image": "assets/images/breakfast.png",
+		"isSelected": false
+	},
+	{
+		"id": 6,
+		"name": "Greasy Fries",
+		"price": 0.99,
+		"image": "assets/images/fries.png",
+		"isSelected": false
+	},
+	{
+		"id": 7,
+		"name": "Bubble Coke",
+		"price": 0.79,
+		"image": "assets/images/cola.png",
+		"isSelected": false
+	},
+	{
+		"id": 8,
+		"name": "Bitter Sweet Cupcake",
+		"price": 1.29,
+		"image": "assets/images/cupcake.png",
+		"isSelected": false
+	}
+]

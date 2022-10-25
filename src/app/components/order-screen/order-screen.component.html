@@ -1,0 +1,35 @@
+<div class="order-grid-wrapper">
+    <header-control></header-control>
+    <main class="main-grid-wrapper">
+        <span class="place-your-order">Choose your meal</span>
+        <div class="content item-grid-wrapper">
+            <ng-container *ngIf="itemList.length > 0">
+                <div *ngFor="let item of itemList; index as i; let c = count"
+                    (click)="onProductClick(item.id)">  
+                    <div class="item-detail-wrapper">
+                        <div class="item-name">
+                            <span>{{item.name}}</span>
+                        </div> 
+                        <div class="item-image">
+                            <img *ngIf="item.isSelected" 
+                                class="check-icon" 
+                                src="assets/images/check.png">
+                            <img class="item-icon" 
+                                [src]="item.image"/>
+                        </div>
+                        <div class="item-price">
+                            <span>${{item.price}}</span>
+                        </div> 
+                    </div>              
+                </div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+            </ng-container>
+        </div>
+    </main>
+    <footer class="footer">
+        <button *ngIf="isItemSelected"
+                class="order-button"
+                [routerLink]="['/overview']">Next</button>
+    </footer>
+</div>

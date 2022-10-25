@@ -1,0 +1,53 @@
+.finish-grid-wrapper {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;   
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+main  {
+    justify-self: center;
+    //margin-top: 2rem;
+}
+
+.enjoy {
+    font-family: kismet;
+    font-size: 6rem;
+    color: #836437;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 229px;
+    height: 160px;
+    margin: auto;
+}
+
+.image-wrapper > img {
+    position: absolute;
+}
+
+.cola {
+    left: 91px;
+    top: 5px;
+}
+
+.burger {
+    left: 45px;
+    z-index: 9999;
+    top: 20px;
+}
+
+.fries {
+    transform: rotate(-14deg);
+    top: 4px;
+}
+
+// iphone ++
+@media screen and (max-width : 767px) {
+    .enjoy {
+        font-size: 3rem;
+    }
+}

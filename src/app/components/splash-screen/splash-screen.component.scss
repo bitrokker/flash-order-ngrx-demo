@@ -1,0 +1,52 @@
+.splash-grid-wrapper {
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.claim {
+    font-family: lobster;
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+    color: #836437;
+
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+    animation-delay: 1s  
+}
+
+// anmiaton
+.header-control { 
+    position: relative;
+
+    animation-name: slide-smooth;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+// ANIMATION
+
+@keyframes fade-in {
+    0%   { opacity: 0; }    
+    100% { opacity: 1; }
+}
+
+@keyframes slide-smooth {
+    0% { top: -40px; }
+    100% { top: 0px;  }
+}
+
+
+// RESPONSIV
+
+// iphone
+@media screen and (max-width : 767px) {
+    .claim {
+        font-size: 2rem;
+    }
+}

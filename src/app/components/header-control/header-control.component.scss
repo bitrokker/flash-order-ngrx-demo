@@ -1,0 +1,38 @@
+header {
+    margin: auto;
+    cursor: pointer;
+}
+
+// desktop
+@media screen and (min-width : 767px) {
+    header {
+        width: 700px;
+    }
+}
+
+// ipad
+@media screen and (max-width : 768px) {
+    header {
+        width: 700px;
+    }
+}
+
+// iphone
+@media screen and (min-width : 361px) and (max-width : 767px) {
+    header {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width : 321px) and (max-width : 360px) {
+    header {
+        width: 270px;
+    }
+}
+
+// old iphone
+@media screen and (max-width : 320px) {
+    header {
+        width: 270px;
+    }
+}
