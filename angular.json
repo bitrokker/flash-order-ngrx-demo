@@ -43,7 +43,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -74,14 +73,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "flash-burger-order-ngrx-demo:build"
+            "buildTarget": "flash-burger-order-ngrx-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "flash-burger-order-ngrx-demo:build:production"
+              "buildTarget": "flash-burger-order-ngrx-demo:build:production"
             },
             "development": {
-              "browserTarget": "flash-burger-order-ngrx-demo:build:development"
+              "buildTarget": "flash-burger-order-ngrx-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "flash-burger-order-ngrx-demo:build"
+            "buildTarget": "flash-burger-order-ngrx-demo:build"
           }
         },
         "test": {
@@ -137,9 +136,7 @@
       }
     }
   },
-  "defaultProject": "flash-burger-order-ngrx-demo",
   "cli": {
-	"defaultCollection": "@ngrx/schematics",
     "schematicCollections": [
       "@ngrx/schematics"
     ]
